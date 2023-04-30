@@ -402,17 +402,27 @@ padding: 32px 16px;
 	justify-content: center;
 	gap: 24px;
 }
-.socials-link{
-	display: flex;
-	justify-content: center;
-    background-color: var(--color-iris);
-	border-radius: 50%;
+.social-items{
 	width: 44px;
 	height: 44px;
 }
+.socials-link{
+	background-color: var(--color-iris);
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.socials-link:hover,
+.socials-link:focus{
+	background-color: var(--color-ocean);
+}
 .socials-icon{
 	fill: #F4F4FD;
-	padding: 12px;
+	justify-content: center;
+	align-items: center;
 }
 /**
   |============================
