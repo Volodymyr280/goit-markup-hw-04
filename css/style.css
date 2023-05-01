@@ -329,6 +329,21 @@ gap: 24px;
 	margin-bottom: 8px;
 	
 }
+.advantages-icon{
+	width: 264px;
+	height: 112px;
+	margin-bottom: 8px;
+}
+
+.decide-link{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color-cloud);
+	border-radius: 4px;
+	width: 100%;
+	height: 100%;
+}
 .advantages-text {
 }
 /**
@@ -403,8 +418,8 @@ padding: 32px 16px;
 	gap: 24px;
 }
 .social-items{
-	width: 44px;
-	height: 44px;
+	width: 40px;
+	height: 40px;
 }
 .socials-link{
 	background-color: var(--color-iris);
@@ -424,6 +439,49 @@ padding: 32px 16px;
 	justify-content: center;
 	align-items: center;
 }
+
+/**
+  |============================
+  | Customers
+  |============================
+*/
+.customers{
+	padding: 120px 0;
+	background-color: var(--color-white);
+}
+.customers-list{
+	display: flex;
+    gap: 24px;
+	justify-content: center;
+}
+.custom-title{
+	margin-bottom: 72px;
+}
+.client-items{
+	width: 166px;
+	height: 88px;
+}
+.client-link{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid #8E8F99;
+border-radius: 4px;
+fill: var(--color-light-slate);
+}
+
+	
+	
+
+.client-link:hover,
+.client-link:focus{
+	fill: var(--color-ocean);
+	border: 1px solid var(--color-ocean);
+}
+
+
 /**
   |============================
   | Footer
@@ -432,6 +490,10 @@ padding: 32px 16px;
 .footer {
 background-color: var(--color-navy-blue);
 padding: 100px 0;
+}
+.special{
+	display: flex;
+	gap: 120px;
 }
 
 
@@ -445,6 +507,19 @@ margin-bottom: 16px;
 .footer-text {
 	color: #f4f4fd;
 	max-width: 264px
+}
+.footer-list{
+	display: flex;
+	gap: 16px;
+}
+.footer-p{
+font-family: var(--primary-font, sans-serif);
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1,5;
+color: var(--color-white);
+margin-bottom: 16px;
 }
 
 /**
