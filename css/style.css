@@ -273,16 +273,18 @@ padding: 24px 0;
 .hero {
     background-color: var(--color-navy-blue) ;
 	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/backgroud-image.jpg);
-	
+	max-width: 1440px;
 	background-repeat: no-repeat;
+	background-position: center;
 	background-size: cover;
 	padding: 188px 0;
+	margin: 0 auto;
 }
 .hero-title {
     color: var(--color-white);
    margin-bottom: 48px;
    max-width: 496px;
-margin: 0 auto 48px;
+   margin: 0 auto 48px;
 
 }
 .container-hero{
@@ -330,6 +332,11 @@ gap: 24px;
 	
 }
 .advantages-icon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color-cloud);
+	border-radius: 4px;
 	width: 264px;
 	height: 112px;
 	margin-bottom: 8px;
@@ -398,7 +405,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 
-padding: 32px 16px;
+padding: 32px 0;
 }
 .team-text{
 	text-align: center;
@@ -456,9 +463,10 @@ padding: 32px 16px;
 }
 .custom-title{
 	margin-bottom: 72px;
+	line-height: 1.1;
 }
 .client-items{
-	width: 166px;
+	width: calc((100% - 120px) / 6);
 	height: 88px;
 }
 .client-link{
@@ -469,7 +477,7 @@ justify-content: center;
 align-items: center;
 border: 1px solid #8E8F99;
 border-radius: 4px;
-fill: var(--color-light-slate);
+color: var(--color-light-slate);
 }
 
 	
@@ -477,8 +485,11 @@ fill: var(--color-light-slate);
 
 .client-link:hover,
 .client-link:focus{
-	fill: var(--color-ocean);
+	color: var(--color-ocean);
 	border: 1px solid var(--color-ocean);
+}
+.client-icon{
+	fill: currentColor; 
 }
 
 
@@ -493,7 +504,23 @@ padding: 100px 0;
 }
 .special{
 	display: flex;
-	gap: 120px;
+	align-items: baseline;
+}
+.footer-info{
+	margin-right: 120px;
+}
+.footer-link{
+	background-color: var(--color-iris);
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer-link:hover,
+.footer-link:focus{
+	background-color: var(--color-green);
 }
 
 
@@ -590,13 +617,16 @@ border-radius: 4px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   
   }
+  .link-portfolio{
+	display: block;
+  }
 .list-img {
 }
 .header-port{
 margin-bottom: 8px;
 }
-.list-img-item:hover,
-.list-img-item:focus {
+.link-portfolio:hover,
+.link-portfolio:focus {
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .img-port {
